@@ -128,15 +128,19 @@
 							this.vid.play(); 
 							var dur_start = this.vid.duration;
 							//alert(dur_start);
+							setTimeout(
+							  () => console.log('Hello Dolly!'),
+							  dur_start,
+							);
 						} 
 					}else{ 
 						this.toggle = false; this.vid.pause();
 					} 
 				},
 			
-				pause: function() {
+				/*pause: function() {
 					alert ("Final...")
-				}
+				}*/
 			 }); 
 		function refrespage() { location.reload(); }
     </script>

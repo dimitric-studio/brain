@@ -143,6 +143,7 @@
 				}*/
 			 }); 
 		function refrespage() { location.reload(); }
+        function redirect() { location.replace('http://kruglikov.com'); }
     </script>
 </head>
 <body>
@@ -167,8 +168,9 @@
 	</a-scene>
 
 	<div class="buttons">
-		<div><button type="button" onclick="vid.play()" class="btn btn-danger">Дивись трейлер &rarr;</button></div>
+		<div><button type="button" onclick="vid.play()" class="btn btn-danger">Дивитись трейлер &rarr;</button></div>
 		<div><button type="button" onclick="refrespage()" class="btn btn-warning">Перезавантажити</button></div>
+        <div><button type="button" onclick="redirect()" class="btn btn-success">Дивитись на нашому сайті</button></div>
 	</div>
 
     <script>

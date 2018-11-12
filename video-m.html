@@ -102,6 +102,12 @@
 			margin-top: 10px;
 			z-index: 900000;
 		}
+        .hidden {
+            display: none;
+        }
+        .visible {
+            display: block;
+        }
 		a-scene { 
 			width: 600px; 
 			height: 300px; 
@@ -170,13 +176,18 @@
 	<div class="buttons">
 		<div><button type="button" onclick="vid.play()" class="btn btn-danger">Дивитись трейлер &rarr;</button></div>
 		<div><button type="button" onclick="refrespage()" class="btn btn-warning">Перезавантажити</button></div>
-        <div><button type="button" onclick="redirect()" class="btn btn-success">Дивитись на нашому сайті</button></div>
+        <div><button type="button" onclick="redirect()" id="call-to-action" class="visible btn btn-success">Дивитись на нашому сайті</button></div>
 	</div>
 
     <script>
         var vidos = document.getElementById("vid");
         vidos.onended = function() {
-            alert("The video has ended");
+            //alert("The video has ended");
+            var classes = document.getElementById("call-to-action").classList;
+            if (classes.contains("visible")) {
+                classes.remove("visible");
+                classes.add("hidden");
+            }
         };
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

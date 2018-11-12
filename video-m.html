@@ -91,6 +91,7 @@
         }
 		.btn {
 			margin-top: 10px;
+			z-index: 900000;
 		}
 		a-scene { 
 			width: 600px; 
@@ -112,17 +113,7 @@
     </script>
 </head>
 <body>
-<div class="container-fluid">
-	<div class="row">
-	  	
-		<div class="col-sm-4">
-			<div><button type="button" onclick="vid.play()" class="btn btn-danger">Дивись трейлер &rarr;</button></div>
-			<div><button type="button" onclick="refrespage()" class="btn btn-warning">Перезавантажити</button></div>
-		</div>
-		
-		<div class="col-sm-8">
-			<div>
-				<a-scene embedded artoolkit='sourceType: webcam' > <!--; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 250; canvasHeight: 250-->
+	<a-scene embedded artoolkit='sourceType: webcam' > <!--; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 250; canvasHeight: 250-->
 
 					<a-assets >
 						<video  id="vid" loop="true" autoplay crossorigin webkit-playsinline playsinline controls> <!--preload="auto" -->
@@ -141,6 +132,17 @@
 					<a-entity camera></a-entity>
 
 				</a-scene>
+<div class="container-fluid">
+	<div class="row">
+	  	
+		<div class="col-sm-4">
+			<div><button type="button" onclick="vid.play()" class="btn btn-danger">Дивись трейлер &rarr;</button></div>
+			<div><button type="button" onclick="refrespage()" class="btn btn-warning">Перезавантажити</button></div>
+		</div>
+		
+		<div class="col-sm-8">
+			<div>
+				
 			</div>
 		</div>
 		

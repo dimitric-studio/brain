@@ -112,27 +112,33 @@
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.min.js"></script>
     <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
    	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script> AFRAME.registerComponent('vidhandler', {
+    <script> 
+		AFRAME.registerComponent('vidhandler', {
 
-        init: function () {// Set up initial state and variables.
-                this.toggle = false; 
-				this.vid = document.querySelector("#vid"); 
-				this.vid.pause(); 
-		},
+				init: function () {// Set up initial state and variables.
+					this.toggle = false; 
+					this.vid = document.querySelector("#vid"); 
+					this.vid.pause(); 
+				},
 
-        tick: function(){
-                if(this.el.object3D.visible == true){ 
-					if(!this.toggle){ 
-						this.toggle = true; 
-						this.vid.play(); 
-						var dur_start = this.vid.duration;
-						//alert(dur_start);
+				tick: function() {
+					if(this.el.object3D.visible == true){ 
+						if(!this.toggle){ 
+							this.toggle = true; 
+							this.vid.play(); 
+							var dur_start = this.vid.duration;
+							//alert(dur_start);
+						} 
+					}else{ 
+						this.toggle = false; this.vid.pause();
 					} 
-				}else{ 
-					this.toggle = false; this.vid.pause();
-				} 
-		} 
-		}); function refrespage() { location.reload(); }
+				},
+			
+				pause: function() {
+					alert ("Final...")
+				}
+			 }); 
+		function refrespage() { location.reload(); }
     </script>
 </head>
 <body>

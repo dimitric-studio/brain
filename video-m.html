@@ -83,12 +83,16 @@
         }
     </style>-->
 	<style>
-	#arjsDebugUIContainer{
-            display: none;
-        }
-        .a-enter-vr-button{
+		#arjsDebugUIContainer{
+			display: none;
+		}
+		.a-enter-vr-button{
             display: none !important;
         }
+		.btn {
+			margin-top: 10;
+			margin-bottom: 10;
+		}
 	</style>
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
@@ -109,8 +113,8 @@
 	<div class="row">
 	  	
 		<div class="col-sm-4">
-			<div><button onclick="vid.play()" class="btn btnskips">Дивись трейлер</button></div>
-			<div><button onclick="refrespage()" class="btn btnskips">Перезавантажити</button></div>
+			<div><button type="button" onclick="vid.play()" class="btn btn-danger">Дивись трейлер &rarr;</button></div>
+			<div><button type="button" onclick="refrespage()" class="btn btn-warning">Перезавантажити</button></div>
 		</div>
 		
 		<div class="col-sm-8">

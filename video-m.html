@@ -96,7 +96,7 @@
 		.buttons {
 			position:fixed;
 			left:10px;
-			top:10px;
+			top:100px;
 		}
 		.btn {
 			margin-top: 10px;
@@ -125,11 +125,11 @@
 					if(!this.toggle){ 
 						this.toggle = true; 
 						this.vid.play(); 
-						alert(this.vid.duration);
+						var dur_start = this.vid.duration;
+						alert(dur_start);
 					} 
 				}else{ 
 					this.toggle = false; this.vid.pause();
-					//alert ("Open the door!");
 				} 
 		} 
 		}); function refrespage() { location.reload(); }
@@ -139,7 +139,7 @@
 	<a-scene embedded artoolkit='sourceType: webcam' > <!--; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 250; canvasHeight: 250-->
 
 		<a-assets >
-			<video  id="vid" loop="true" autoplay crossorigin webkit-playsinline playsinline controls> <!--preload="auto" -->
+			<video  id="vid" loop="false" autoplay crossorigin webkit-playsinline playsinline controls> <!--preload="auto" -->
 				<!--<source  type="video/webm"  src="test-v-1.WebM">-->
 				<source src="test-v-2.mp4"> <!--type="video/mp4"-->
 				<h3>Error : Your browser does not support.</h3>

@@ -115,12 +115,21 @@
     <script> AFRAME.registerComponent('vidhandler', {
 
         init: function () {// Set up initial state and variables.
-                this.toggle = false; this.vid = document.querySelector("#vid"); this.vid.pause(); },
+                this.toggle = false; 
+				this.vid = document.querySelector("#vid"); 
+				this.vid.pause(); 
+		},
 
         tick: function(){
-                if(this.el.object3D.visible == true){ if(!this.toggle){ this.toggle = true; this.vid.play(); } }else{ 
+                if(this.el.object3D.visible == true){ 
+					if(!this.toggle){ 
+						this.toggle = true; 
+						this.vid.play(); 
+						alert(this.vid.duration);
+					} 
+				}else{ 
 					this.toggle = false; this.vid.pause();
-					alert ("Open the door!");
+					//alert ("Open the door!");
 				} 
 		} 
 		}); function refrespage() { location.reload(); }

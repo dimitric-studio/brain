@@ -26,6 +26,11 @@
 			margin-top: 10px;
 			z-index: 900000;
 		}
+        .trailer-time {
+            position:fixed;
+            left:10px;
+            bottom:10px;
+        }
         .hidden {
             display: none;
         }
@@ -93,8 +98,8 @@
 		<div><button type="button" onclick="vid.play()" class="btn btn-danger">Дивитись трейлер &rarr;</button></div>
 		<div><button type="button" onclick="refrespage()" class="btn btn-warning">Перезавантажити</button></div>
         <div><button type="button" onclick="redirect()" id="call-to-action" class="hidden btn btn-success">Дивитись на нашому сайті</button></div>
-        <div>Тривалість цього трейлеру: <span class="badge badge-pill badge-secondary"></span></div>
 	</div>
+    <div class="trailer-time">Тривалість цього трейлеру: <span class="badge badge-pill badge-secondary"></span></div>
 
     <script>
         var vidos = document.getElementById("vid");

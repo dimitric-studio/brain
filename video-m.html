@@ -63,6 +63,12 @@
 							this.vid.play(); 
 							var dur_start = this.vid.duration;
                             var vidos = document.getElementById("vid");
+							
+							var update = setInterval(function () {
+								  timer.innerText = Math.round(vid.currentTime / vid.duration * 100) + "%";
+							  }, 4000);
+							document.querySelector('.badge').innerHTML = update;
+							
 							var classes = document.getElementById("call-to-action").classList;
 							document.querySelector('.badge').innerHTML = dur_start;
 							if (classes.contains("visible")) {
@@ -105,16 +111,16 @@
 		<div><button type="button" onclick="refrespage()" class="btn btn-warning">Перезавантажити</button></div>
         <div><button type="button" onclick="redirect()" id="call-to-action" class="hidden btn btn-success">Дивитись на нашому сайті</button></div>
 	</div>
-    <div class="trailer-time">Тривалість цього трейлеру: <span class="badge badge-pill badge-secondary"></span></div>
+    <div class="trailer-time">Тривалість цього трейлеру: <span class="badge badge-pill badge-secondary">0%</span></div>
 	<!--<span id="timer">0%</span>-->
 
     <script>
         var vidos = document.getElementById("vid");
 		var classes = document.getElementById("call-to-action").classList;
-		var update = setInterval(function () {
+		/*var update = setInterval(function () {
               timer.innerText = Math.round(vid.currentTime / vid.duration * 100) + "%";
           }, 4000);
-		document.querySelector('.badge').innerHTML = update;
+		document.querySelector('.badge').innerHTML = update;*/
         vidos.onended = function() {
             //alert("The video has ended");
             if (classes.contains("hidden")) {

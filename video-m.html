@@ -63,14 +63,10 @@
 							this.vid.play(); 
 							var dur_start = this.vid.duration;
                             var vidos = document.getElementById("vid");
-							
 							var update = setInterval(function () {
 								  timer.innerText = Math.round(vid.currentTime / vid.duration * 100) + "%";
 							  }, 500);
-							//document.querySelector('.badge').innerHTML = update;
-							
 							var classes = document.getElementById("call-to-action").classList;
-							/*document.querySelector('.badge').innerHTML = dur_start;*/
 							if (classes.contains("visible")) {
 								classes.remove("visible");
 								classes.add("hidden");
@@ -117,27 +113,13 @@
     <script>
         var vidos = document.getElementById("vid");
 		var classes = document.getElementById("call-to-action").classList;
-		/*var update = setInterval(function () {
-              timer.innerText = Math.round(vid.currentTime / vid.duration * 100) + "%";
-          }, 4000);
-		document.querySelector('.badge').innerHTML = update;*/
-        vidos.onended = function() {
-            //alert("The video has ended");
+	    vidos.onended = function() {
             if (classes.contains("hidden")) {
                 classes.remove("hidden");
                 classes.add("visible");
             }
         };
-		/*if(vidos != null)//if possibility of no video loaded in DOM
-		{
-			viods.onplay = function () {
-				if (classes.contains("visible")) {
-					classes.remove("visible");
-					classes.add("hidden");
-				}
-			};
-		}
-*/  </script>
+	</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>

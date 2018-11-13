@@ -62,7 +62,14 @@
 							this.toggle = true; 
 							this.vid.play(); 
 							var dur_start = this.vid.duration;
-                            document.querySelector('.badge').innerHTML = dur_start;
+                            var vidos = document.getElementById("vid");
+							var classes = document.getElementById("call-to-action").classList;
+							document.querySelector('.badge').innerHTML = dur_start;
+							if (classes.contains("visible")) {
+								classes.remove("visible");
+								classes.add("hidden");
+							}
+							
 						}
 					}else{ 
 						this.toggle = false; this.vid.pause();
@@ -102,8 +109,8 @@
     <div class="trailer-time">Тривалість цього трейлеру: <span class="badge badge-pill badge-secondary"></span></div>
 
     <script>
-        var vidos = document.getElementById("vid");
-		var classes = document.getElementById("call-to-action").classList;
+        /*var vidos = document.getElementById("vid");
+		var classes = document.getElementById("call-to-action").classList;*/
         vidos.onended = function() {
             //alert("The video has ended");
             if (classes.contains("hidden")) {
@@ -111,12 +118,12 @@
                 classes.add("visible");
             }
         };
-		viods.onplay = function () {
+		/*viods.onplay = function () {
 			if (classes.contains("visible")) {
 				classes.remove("visible");
 				classes.add("hidden");
 			}
-		};
+		};*/
 		/*if(vidos != null)//if possibility of no video loaded in DOM
 		{
 			viods.onplay = function () {

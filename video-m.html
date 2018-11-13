@@ -67,7 +67,7 @@
 							var update = setInterval(function () {
 								  timer.innerText = Math.round(vid.currentTime / vid.duration * 100) + "%";
 							  }, 4000);
-							document.querySelector('.badge').innerHTML = update;
+							//document.querySelector('.badge').innerHTML = update;
 							
 							var classes = document.getElementById("call-to-action").classList;
 							document.querySelector('.badge').innerHTML = dur_start;
@@ -111,7 +111,7 @@
 		<div><button type="button" onclick="refrespage()" class="btn btn-warning">Перезавантажити</button></div>
         <div><button type="button" onclick="redirect()" id="call-to-action" class="hidden btn btn-success">Дивитись на нашому сайті</button></div>
 	</div>
-    <div class="trailer-time">Тривалість цього трейлеру: <span class="badge badge-pill badge-secondary">0%</span></div>
+    <div class="trailer-time">Тривалість цього трейлеру: <span id="timer" class="badge badge-pill badge-secondary">0%</span></div>
 	<!--<span id="timer">0%</span>-->
 
     <script>

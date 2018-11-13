@@ -69,7 +69,6 @@
 								classes.remove("visible");
 								classes.add("hidden");
 							}
-							
 						}
 					}else{ 
 						this.toggle = false; this.vid.pause();
@@ -109,8 +108,8 @@
     <div class="trailer-time">Тривалість цього трейлеру: <span class="badge badge-pill badge-secondary"></span></div>
 
     <script>
-        /*var vidos = document.getElementById("vid");
-		var classes = document.getElementById("call-to-action").classList;*/
+        var vidos = document.getElementById("vid");
+		var classes = document.getElementById("call-to-action").classList;
         vidos.onended = function() {
             //alert("The video has ended");
             if (classes.contains("hidden")) {

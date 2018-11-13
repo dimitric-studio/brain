@@ -66,11 +66,11 @@
 							
 							var update = setInterval(function () {
 								  timer.innerText = Math.round(vid.currentTime / vid.duration * 100) + "%";
-							  }, 4000);
+							  }, 500);
 							//document.querySelector('.badge').innerHTML = update;
 							
 							var classes = document.getElementById("call-to-action").classList;
-							document.querySelector('.badge').innerHTML = dur_start;
+							/*document.querySelector('.badge').innerHTML = dur_start;*/
 							if (classes.contains("visible")) {
 								classes.remove("visible");
 								classes.add("hidden");

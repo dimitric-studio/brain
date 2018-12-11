@@ -84,7 +84,7 @@
     </script>
 </head>
 <body>
-	<a-scene embedded artoolkit='sourceType: webcam' > <!--; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 250; canvasHeight: 250-->
+	<a-scene embedded artoolkit='sourceType: webcam'> <!--; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 250; canvasHeight: 250-->
 
 		<a-assets >
 			<video  id="vid" loop="false" autoplay crossorigin webkit-playsinline playsinline controls> <!--preload="auto" -->
@@ -109,11 +109,9 @@
 		<div><button type="button" onclick="refrespage()" class="btn btn-warning">Перезавантажити</button></div>
         <div><button type="button" onclick="redirect()" id="call-to-action" class="hidden btn btn-success">Дивитись на нашому сайті</button></div>
 	</div>
-    <!--<div class="trailer-time">Тривалість цього трейлеру: <span id="timer" class="badge badge-pill badge-secondary">0%</span></div>-->
     <div class="alert trailer-time" role="alert">
         Тривалість цього трейлеру: <span id="timer" class="badge badge-pill badge-primary">0%</span>
     </div>
-	<!--<span id="timer">0%</span>-->
 
     <script>
         var vidos = document.getElementById("vid");

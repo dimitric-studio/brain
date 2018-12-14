@@ -26,6 +26,9 @@
             margin-top: 10px;
             z-index: 900000;
         }
+		.btn-red {
+			color: rgba(96,13,14,1.00);
+		}
         .trailer-time {
             position:fixed;
             left:10px;
@@ -111,14 +114,16 @@
 </div>
 
 <div class="buttons">
-    <div><button type="button" onclick="vid.play()" class="btn btn-danger">Дивитись трейлер &rarr;</button></div>
-    <div><button type="button" onclick="refrespage()" class="btn btn-warning">Перезавантажити</button></div>
-    <div><button type="button" onclick="redirect()" id="call-to-action" class="hidden btn btn-success">Дивитись на нашому сайті</button></div>
+    <div><button type="button" onclick="vid.play()" class="btn btn-danger btn-red">Дивитись тізер</button></div>
+    <!--<div><button type="button" onclick="refrespage()" class="btn btn-warning">Перезавантажити</button></div>-->
+    <div><button type="button" onclick="redirect()" id="call-to-action" class="hidden btn btn-success btn-red">Вырваться из этой клетки</button></div>
 </div>
 <!--<div class="trailer-time">Тривалість цього трейлеру: <span id="timer" class="badge badge-pill badge-secondary">0%</span></div>-->
+<!--
 <div class="alert trailer-time" role="alert">
     Тривалість цього трейлеру: <span id="timer" class="badge badge-pill badge-primary">0%</span>
 </div>
+-->
 <!--<span id="timer">0%</span>-->
 
 <script>

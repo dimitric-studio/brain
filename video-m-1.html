@@ -22,6 +22,10 @@
             left:5%;
             top:30%;
         }*/
+		.buttons-position {
+			padding-left: 10px;
+			margin-left: 10px;
+		}
         .btn {
             margin-top: 10px;
             z-index: 900000;
@@ -92,13 +96,16 @@
 </head>
 <body>
 <div class="dark-overlay">
+	<div class="buttons-position">
 	
-	<a-scene embedded artoolkit='sourceType: webcam' > <!--; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 250; canvasHeight: 250-->
-		<div class="buttons">
+	<div class="buttons">
 			<div><button type="button" onclick="vid.play()" id="play" class="btn btn-danger btn-red">Дивитись тізер</button></div>
 			<!--<div><button type="button" onclick="refrespage()" class="btn btn-warning">Перезавантажити</button></div>-->
 			<div><button type="button" onclick="redirect()" id="call-to-action" class="hidden btn btn-success btn-red">Вырваться из этой клетки</button></div>
-		</div>
+	</div>
+	
+	<a-scene embedded artoolkit='sourceType: webcam' > <!--; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 250; canvasHeight: 250-->
+		
 
 		<a-assets >
 			<video  id="vid" loop="false" autoplay crossorigin playsinline webkit-playsinline controls> <!--preload="auto" -->
@@ -117,6 +124,7 @@
 		<a-entity camera></a-entity>
 
 	</a-scene>
+	</div>
 </div>
 
 

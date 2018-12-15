@@ -182,6 +182,9 @@
         if (actionClasses.contains("hidden")) {
             actionClasses.remove("hidden");
             actionClasses.add("visible");
+            if (actionClasses.contains("hidden")) {
+                playClasses.remove("visible");
+            }
             playClasses.add("hidden");
         }
     };

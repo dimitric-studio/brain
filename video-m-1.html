@@ -138,8 +138,8 @@
 		</tr>
 		<tr>
 			<td align="center">
-				<button type="button" onclick="vid.play()" id="play" class="btn btn-link btn-red">Дивитись тізер</button><br>
-				<button type="button" onclick="redirect()" id="call-to-action" class="hidden btn btn-link btn-red">Вирватися з цієї клітки</button><br>
+				<button type="button" onclick="vid.play()" id="play" class="btn btn-link btn-red">Дивитись тізер</button>
+				<button type="button" onclick="redirect()" id="call-to-action" class="hidden btn btn-link btn-red">Вирватися з цієї клітки</button>
 			</td>
 		</tr>
 		<tr>
@@ -174,11 +174,13 @@
 
 <script>
     var vidos = document.getElementById("vid");
-    var classes = document.getElementById("call-to-action").classList;
+    var actionClasses = document.getElementById("call-to-action").classList;
+    var playClasses = document.getElementById("play").classList;
     vidos.onended = function() {
-        if (classes.contains("hidden")) {
-            classes.remove("hidden");
-            classes.add("visible");
+        if (actionClasses.contains("hidden")) {
+            actionClasses.remove("hidden");
+            actionClasses.add("visible");
+            playClasses.add("hidden");
         }
     };
 </script>

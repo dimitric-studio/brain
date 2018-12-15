@@ -71,7 +71,7 @@
             width: 600px;
             height: 300px;
         }
-		a-scene > a-marker {
+		#movie {
 			border: aquamarine 5px solid;
 		}
     </style>
@@ -131,7 +131,7 @@
 
 		<a-marker crossorigin="anonymous" id="memarker" preset="custom" type="pattern" url="pattern-custom-marker_2.patt" vidhandler>
 			<!--<a-marker crossorigin="anonymous" id="memarker" preset="hiro" vidhandler>-->
-			<a-plane  position="0 0.1 0" scale="1 1 1" width="3" height="2" rotation="-90 0 0" material='transparent:true;alphaTest:0;src:#vid'></a-plane> <!--scale="6 6 6" -->
+			<a-plane id="movie" position="0 0.1 0" scale="1 1 1" width="3" height="2" rotation="-90 0 0" material='transparent:true;alphaTest:0;src:#vid'></a-plane> <!--scale="6 6 6" -->
 		</a-marker>
 
 		<a-entity camera></a-entity>

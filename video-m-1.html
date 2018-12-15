@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="author" content="Diokletian">
-    <title>"Крiпосна" | Вырваться из этой клетки</title>
+    <title>Крiпосна | Вирватися з цієї клітки</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
         body{
-            margin:0px;
+            margin:0;
             overflow: hidden;
         }
         #arjsDebugUIContainer{
@@ -88,10 +88,12 @@
                         var update = setInterval(function () {
                             timer.innerText = Math.round(vid.currentTime / vid.duration * 100) + "%";
                         }, 500);
-                        var classes = document.getElementById("call-to-action").classList;
-                        if (classes.contains("visible")) {
-                            classes.remove("visible");
-                            classes.add("hidden");
+                        var actionClasses = document.getElementById("call-to-action").classList;
+                        var playClasses = document.getElementById("play").classList;
+                        if (actionClasses.contains("visible")) {
+                            actionClasses.remove("visible");
+                            actionClasses.add("hidden");
+                            playClasses.add("visible");
                         }
                     }
                 }else{

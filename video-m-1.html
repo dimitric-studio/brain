@@ -25,8 +25,9 @@
         }
 		.candlestick {
 			position:absolute;
-			right:35%;
+			right:5%;
 			bottom:-2%;
+			width: 90%;
 		}
 		/*.buttons-position {
 			padding-left: 10px;
@@ -132,9 +133,7 @@
 
 		<a-marker crossorigin="anonymous" id="memarker" preset="custom" type="pattern" url="pattern-custom-marker_2.patt" vidhandler>
 			<!--<a-marker crossorigin="anonymous" id="memarker" preset="hiro" vidhandler>-->
-			<div id="movie">
 			<a-plane position="0 0.1 0" scale="1 1 1" width="3" height="2" rotation="-90 0 0" material='transparent:true;alphaTest:0;src:#vid'></a-plane> <!--scale="6 6 6" -->
-			</div>
 		</a-marker>
 
 
@@ -165,7 +164,13 @@
 	</table>
 </div>
 <div class="candlestick">
-	<img src="candlestick.png" height="175">
+	<table width="100%">
+		<tr>
+			<td align="center">
+				<img src="candlestick.png" height="175px">
+			</td>
+		</tr>
+	</table>
 </div>
 	
 <!--<div class="buttons">

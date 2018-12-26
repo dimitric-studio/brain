@@ -28,9 +28,6 @@
 			right:5%;
 			bottom:-2%;
 			width: 90%;
-			background-image: url("candel-light_ActionScript_3a_shadow_h175_1.png");
-			background-repeat: no-repeat;
-			background-position: top;
 		}
 		/*.buttons-position {
 			padding-left: 10px;
@@ -52,11 +49,6 @@
 			width: 100%;
 			/*border: black 2px solid;*/
 		}
-/*
-		.candlestick > td {
-			background-image: url("candel-light_ActionScript_3a_shadow.png");
-		}
-*/
         .trailer-time {
             position:fixed;
             left:10px;
@@ -83,6 +75,25 @@
 		#movie {
 			border: aquamarine 5px solid;
 		}
+		.preloader{
+			position: fixed;
+			top:0;
+			left:0;
+			bottom: 0;
+			right: 0;
+			background: #fff;
+			z-index: 99999;
+		}
+		.preloader .preloader-gif{
+			display: block;
+			width: 80px;
+			height: 80px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin: -40px 0 0 -40px;
+			background: url('Disk-1.5s-200px.gif') no-repeat;
+		}
     </style>
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
@@ -90,6 +101,16 @@
     <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>
+        $(document).ready(function () {
+
+            // preloader
+            $(window).load(function(){
+                $('.preloader').delay(400).fadeOut(500);
+            })
+
+        })
+	</script>
+	<script>
         AFRAME.registerComponent('vidhandler', {
             init: function () {// Set up initial state and variables.
                 this.toggle = false;
@@ -125,6 +146,7 @@
 </head>
 <body>
 <div class="dark-overlay">
+	<div class="preloader"><span class="preloader-gif"></span></div>
 		
 	<a-scene embedded artoolkit='sourceType: webcam' > <!--; detectionMode: mono; maxDetectionRate: 30; canvasWidth: 250; canvasHeight: 250-->
 		

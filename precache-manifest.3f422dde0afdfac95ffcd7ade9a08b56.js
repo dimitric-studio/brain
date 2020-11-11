@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed3261f2803d8c16bedea10cbe7edb2f",
+    "revision": "c34326a363d639bf2cb7b13dba7d4e71",
     "url": "/index.html"
   },
   {
-    "revision": "acded61a2e83a49b6cfa",
-    "url": "/static/css/main.fcd04ca3.chunk.css"
+    "revision": "524aecdc03e7312eb1f8",
+    "url": "/static/css/main.b2354e57.chunk.css"
   },
   {
     "revision": "2224964d524c5a122310",
@@ -16,12 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.4ddd8906.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "acded61a2e83a49b6cfa",
-    "url": "/static/js/main.0a38aae0.chunk.js"
+    "revision": "524aecdc03e7312eb1f8",
+    "url": "/static/js/main.7cdcc0ee.chunk.js"
   },
   {
     "revision": "077649369ee9c36c9d2d",
     "url": "/static/js/runtime-main.9a8d94bd.js"
+  },
+  {
+    "revision": "34c923cbc4a1d2bd049f702aa5b511aa",
+    "url": "/static/media/StormSky.34c923cb.png"
   },
   {
     "revision": "b156c5c2805048cedbee013cb9d34de3",

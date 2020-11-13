@@ -8,18 +8,18 @@
       "type": "image/x-icon"
     },
     {
-      "src": "img/messiah-192.png",
+      "src": "img/Messiah_192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "img/messiah-512.png",
+      "src": "img/Messiah_512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#9ddcf2",
+  "background_color": "#113b42"
 }

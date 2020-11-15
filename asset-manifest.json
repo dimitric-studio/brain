@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://dimitric-studio.github.io/static/css/main.4b7665b9.chunk.css",
-    "main.js": "https://dimitric-studio.github.io/static/js/main.67757269.chunk.js",
-    "main.js.map": "https://dimitric-studio.github.io/static/js/main.67757269.chunk.js.map",
+    "main.js": "https://dimitric-studio.github.io/static/js/main.63d1b243.chunk.js",
+    "main.js.map": "https://dimitric-studio.github.io/static/js/main.63d1b243.chunk.js.map",
     "runtime-main.js": "https://dimitric-studio.github.io/static/js/runtime-main.4b244844.js",
     "runtime-main.js.map": "https://dimitric-studio.github.io/static/js/runtime-main.4b244844.js.map",
     "static/js/2.3e755c45.chunk.js": "https://dimitric-studio.github.io/static/js/2.3e755c45.chunk.js",
     "static/js/2.3e755c45.chunk.js.map": "https://dimitric-studio.github.io/static/js/2.3e755c45.chunk.js.map",
     "index.html": "https://dimitric-studio.github.io/index.html",
-    "precache-manifest.6f77802ec6a85d15091dc64c6bfaa43c.js": "https://dimitric-studio.github.io/precache-manifest.6f77802ec6a85d15091dc64c6bfaa43c.js",
+    "precache-manifest.c77518101759d689f68cad7b43d9522c.js": "https://dimitric-studio.github.io/precache-manifest.c77518101759d689f68cad7b43d9522c.js",
     "service-worker.js": "https://dimitric-studio.github.io/service-worker.js",
     "static/css/main.4b7665b9.chunk.css.map": "https://dimitric-studio.github.io/static/css/main.4b7665b9.chunk.css.map",
     "static/js/2.3e755c45.chunk.js.LICENSE.txt": "https://dimitric-studio.github.io/static/js/2.3e755c45.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.4b244844.js",
     "static/js/2.3e755c45.chunk.js",
     "static/css/main.4b7665b9.chunk.css",
-    "static/js/main.67757269.chunk.js"
+    "static/js/main.63d1b243.chunk.js"
   ]
 }

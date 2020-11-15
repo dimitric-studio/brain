@@ -40,7 +40,7 @@
    console.log('INSTALL: Success');
  });
 
- /*window.addEventListener('DOMContentLoaded', () => {
+ window.addEventListener('DOMContentLoaded', () => {
    let displayMode = 'browser tab';
    if (navigator.standalone) {
      displayMode = 'standalone-ios';
@@ -50,7 +50,7 @@
    }
    // Log launch display mode to analytics
    console.log('DISPLAY_MODE_LAUNCH:', displayMode);
- });*/  
+ });  
 
 
 openShare = async () => {

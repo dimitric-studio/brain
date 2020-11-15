@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.6b5cb6e7.chunk.css",
-    "main.js": "/static/js/main.ad8f8ae5.chunk.js",
-    "main.js.map": "/static/js/main.ad8f8ae5.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9a8d94bd.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9a8d94bd.js.map",
-    "static/js/2.3e755c45.chunk.js": "/static/js/2.3e755c45.chunk.js",
-    "static/js/2.3e755c45.chunk.js.map": "/static/js/2.3e755c45.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.6066238d39f658572851db7a7e482965.js": "/precache-manifest.6066238d39f658572851db7a7e482965.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.6b5cb6e7.chunk.css.map": "/static/css/main.6b5cb6e7.chunk.css.map",
-    "static/js/2.3e755c45.chunk.js.LICENSE.txt": "/static/js/2.3e755c45.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/scene_max.eaf079d3.jpg"
+    "main.css": "https://dimitric-studio.github.io/static/css/main.9eac29bb.chunk.css",
+    "main.js": "https://dimitric-studio.github.io/static/js/main.67757269.chunk.js",
+    "main.js.map": "https://dimitric-studio.github.io/static/js/main.67757269.chunk.js.map",
+    "runtime-main.js": "https://dimitric-studio.github.io/static/js/runtime-main.4b244844.js",
+    "runtime-main.js.map": "https://dimitric-studio.github.io/static/js/runtime-main.4b244844.js.map",
+    "static/js/2.3e755c45.chunk.js": "https://dimitric-studio.github.io/static/js/2.3e755c45.chunk.js",
+    "static/js/2.3e755c45.chunk.js.map": "https://dimitric-studio.github.io/static/js/2.3e755c45.chunk.js.map",
+    "index.html": "https://dimitric-studio.github.io/index.html",
+    "precache-manifest.70cd718ca67225970abe37cc5d5a68b9.js": "https://dimitric-studio.github.io/precache-manifest.70cd718ca67225970abe37cc5d5a68b9.js",
+    "service-worker.js": "https://dimitric-studio.github.io/service-worker.js",
+    "static/css/main.9eac29bb.chunk.css.map": "https://dimitric-studio.github.io/static/css/main.9eac29bb.chunk.css.map",
+    "static/js/2.3e755c45.chunk.js.LICENSE.txt": "https://dimitric-studio.github.io/static/js/2.3e755c45.chunk.js.LICENSE.txt",
+    "static/media/App.css": "https://dimitric-studio.github.io/static/media/scene_max.eaf079d3.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9a8d94bd.js",
+    "static/js/runtime-main.4b244844.js",
     "static/js/2.3e755c45.chunk.js",
-    "static/css/main.6b5cb6e7.chunk.css",
-    "static/js/main.ad8f8ae5.chunk.js"
+    "static/css/main.9eac29bb.chunk.css",
+    "static/js/main.67757269.chunk.js"
   ]
 }

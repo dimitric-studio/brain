@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://dimitric-studio.github.io/precache-manifest.8d1db24bd0af171a5b4d72dd6c9923b7.js"
+  "https://dimitric-studio.github.io/precache-manifest.4558a68f39cef44342aa32205b717340.js"
 );
 
 self.addEventListener('message', (event) => {

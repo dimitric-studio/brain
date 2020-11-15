@@ -54,17 +54,29 @@
 
 /* On iOS */
 
-// Detects if device is an iOS (including iOS 13) 
-const isIos = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+function showIosInstall() {
+  let iosPrompt = document.querySelector(".ios-prompt");
+  iosPrompt.style.display = "block";
+  iosPrompt.addEventListener("click", () => {
+    iosPrompt.style.display = "none";
+  });
+}
 
+// Detects if device is on iOS
+const isIos = () => {
+  const userAgent = window.navigator.userAgent.toLowerCase();
+  return /iphone|ipad|ipod/.test( userAgent );
+}
 // Detects if device is in standalone mode
-const isInStandaloneMode = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
 
 // Checks if should display install popup notification:
-if (isIos && !isInStandaloneMode) {
-  this.setState({ showInstallMessage: true });
+if (isIos() && !isInStandaloneMode()) {
+  // this.setState({ showInstallMessage: true });
+  showIosInstall();
+}  
 
-
+/* / On iOS */
 
 openShare = async () => {
  if (navigator && navigator.share) {
@@ -131,38 +143,3 @@ function shareFallback() {
    resolve();
  });
 }
-
-
-/*const title = document.querySelector("meta[property='og:title']").getAttribute('content');
-const text = document.querySelector("meta[property='og:description']").getAttribute('content');
-const url = document.querySelector("meta[property='og:url']").getAttribute('content');
-
-let shareData = {
- title: title,
- text: text,
- url: url
-}
-
-const btn = document.querySelector('#shareIt');
-const resultPara = document.querySelector('.result');
-
-btn.addEventListener('click', () => { {% endcomment %}
- navigator.share(shareData)
-   .then(() =>
-     resultPara.textContent = 'Хорошо, теперь этот замечательный сайт увидят другие!'
-   )
-   .catch((e) =>
-     resultPara.textContent = 'Ошибка: ' + e         
-   )
-});*/
-
-
-/*if (navigator.share) {
- navigator.share({
-   title: 'web.dev',
-   text: 'Check out web.dev.',
-   url: 'https://web.dev/',
- })
-   .then(() => console.log('Successful share'))
-   .catch((error) => console.log('Error sharing', error));
-}*/

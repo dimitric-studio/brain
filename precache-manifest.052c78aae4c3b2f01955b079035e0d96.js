@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2c65effa5b434fd3299dfb472ab58fb9",
+    "revision": "8b487973033405f2b578b7239093c96f",
     "url": "https://dimitric-studio.github.io/index.html"
   },
   {

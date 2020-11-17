@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "https://dimitric-studio.github.io/static/css/main.3842b16f.chunk.css",
+    "main.css": "https://dimitric-studio.github.io/static/css/main.f4031f3d.chunk.css",
     "main.js": "https://dimitric-studio.github.io/static/js/main.05ab297e.chunk.js",
     "main.js.map": "https://dimitric-studio.github.io/static/js/main.05ab297e.chunk.js.map",
     "runtime-main.js": "https://dimitric-studio.github.io/static/js/runtime-main.4b244844.js",
@@ -8,16 +8,16 @@
     "static/js/2.3e755c45.chunk.js": "https://dimitric-studio.github.io/static/js/2.3e755c45.chunk.js",
     "static/js/2.3e755c45.chunk.js.map": "https://dimitric-studio.github.io/static/js/2.3e755c45.chunk.js.map",
     "index.html": "https://dimitric-studio.github.io/index.html",
-    "precache-manifest.88656f399832a3d1b2ed841e92b1dfcc.js": "https://dimitric-studio.github.io/precache-manifest.88656f399832a3d1b2ed841e92b1dfcc.js",
+    "precache-manifest.b9d52d06ce224f10dd5d265249958906.js": "https://dimitric-studio.github.io/precache-manifest.b9d52d06ce224f10dd5d265249958906.js",
     "service-worker.js": "https://dimitric-studio.github.io/service-worker.js",
-    "static/css/main.3842b16f.chunk.css.map": "https://dimitric-studio.github.io/static/css/main.3842b16f.chunk.css.map",
+    "static/css/main.f4031f3d.chunk.css.map": "https://dimitric-studio.github.io/static/css/main.f4031f3d.chunk.css.map",
     "static/js/2.3e755c45.chunk.js.LICENSE.txt": "https://dimitric-studio.github.io/static/js/2.3e755c45.chunk.js.LICENSE.txt",
     "static/media/App.css": "https://dimitric-studio.github.io/static/media/scene_max.eaf079d3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.4b244844.js",
     "static/js/2.3e755c45.chunk.js",
-    "static/css/main.3842b16f.chunk.css",
+    "static/css/main.f4031f3d.chunk.css",
     "static/js/main.05ab297e.chunk.js"
   ]
 }

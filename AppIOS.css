@@ -1,0 +1,8 @@
+/* fuck you iOS */
+body {
+  min-height:100% !important;
+  width:100% !important;
+  background:url(./img/scene.png) no-repeat !important;
+  overflow: auto !important;
+  background-size: cover !important;
+}

@@ -18,7 +18,7 @@
             `${window.location.protocol}//${window.location.host}`;
 
       await navigator.share({
-        text: '%REACT_APP_WEBSITE_NAME%',
+        text: 'Мысленно задай волнующий тебя вопрос, нажми на кнопку и спроси напутствие или совет. Результат тебя вдохновит!',
         url: shareUrl,
       });
 

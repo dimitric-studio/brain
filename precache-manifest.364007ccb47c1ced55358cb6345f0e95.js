@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b7539d3818a5c727a05bc11be51ac460",
+    "revision": "76e15171398de6a070cb5049d8b19c65",
     "url": "https://dimitric-studio.github.io/index.html"
   },
   {
-    "revision": "b060c4d7df85cc1c7e25",
-    "url": "https://dimitric-studio.github.io/static/css/main.1554d223.chunk.css"
+    "revision": "8fae16776a7ae9235818",
+    "url": "https://dimitric-studio.github.io/static/css/main.8c60b4cd.chunk.css"
   },
   {
     "revision": "7edf19b6e393d2af3f7c",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://dimitric-studio.github.io/static/js/2.3e755c45.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b060c4d7df85cc1c7e25",
+    "revision": "8fae16776a7ae9235818",
     "url": "https://dimitric-studio.github.io/static/js/main.05ab297e.chunk.js"
   },
   {

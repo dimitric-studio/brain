@@ -78,7 +78,9 @@
 	color: #fff;
 	outline: none;
 }
-
+.main {
+	background-color: #e5e5e5;
+}
 .header {
 	background: url(../img/BG.png) center no-repeat;
 	background-size: cover;
@@ -94,8 +96,22 @@
 	min-height: 250px;
 }
 span.close {position: absolute;left: auto;right: 57px;top: 68px;cursor: pointer;opacity: 0;pointer-events: none}
-.container {position: relative;background-color: #e5e5e5;}
-.container .footer-text {color: rgba(0, 0, 0, 0.8);font-family: Roboto;font-size: 1.15em;text-align: center;padding: 60px 0 125px;line-height: 1.5}
+.container {
+	position: relative;
+	background-color: #fff;
+	padding: 1em 0;
+}
+.footer-text {
+	color: rgba(0, 0, 0, 0.8);
+	font-family: Roboto;
+	font-size: 1.15em;
+	text-align: center;
+	padding: 2.5em 0;
+	line-height: 1.5;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5em;
+}
 .container > img {
 	max-width: 100%;
 	height: auto;

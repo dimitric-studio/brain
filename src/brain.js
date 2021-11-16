@@ -78,7 +78,7 @@ export default class Sketch {
       1000
     );
 
-    this.camera.position.set(0, 0, 7);
+    this.camera.position.set(10, 5, 7); //this.camera.position.set(0, 0, 7);
 
     this.time = 0;
     this.loader = new THREE.GLTFLoader().setPath("models/");

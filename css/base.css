@@ -1,10 +1,17 @@
 @font-face {
-	font-family: 'Propaganda';
-		src:    url('https://nomail.com.ua/files/eot/3810e944129076cde53524371d804024.eot?#iefix') format('embedded-opentype'),
-				url('https://nomail.com.ua/files/woff/3810e944129076cde53524371d804024.woff') format('woff'),
-				url('https://nomail.com.ua/files/woff2/3810e944129076cde53524371d804024.woff2') format('woff2');
-	}
-	@font-face { font-family: 'Propaganda';  src: local('Propaganda'), url('https://nomail.com.ua/files/woff/3810e944129076cde53524371d804024.woff') format('woff'); }
+	font-family: "Aino";
+	src: url("https://cdn.jsdelivr.net/gh/bwdragon/static@19102021/Aino_31_170411-Regular.otf") format("opentype");
+	font-weight: normal;
+}	
+@font-face {
+	font-family: "Aino";
+	src: url("https://cdn.jsdelivr.net/gh/bwdragon/static@19102021/Aino_31_170411-Bold.otf") format("opentype");
+	font-weight: bold;
+}	
+@font-face {
+	font-family: "Aino-Headline";
+	src: url("https://cdn.jsdelivr.net/gh/bwdragon/static@19102021/Aino-Headline.otf") format("opentype");
+}	
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
 *,
 *::after,
@@ -19,13 +26,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 body {
 	--color-text: #e0e0e0;
 	--color-text-secondary: #5e6262;
-	--color-bg: #151616;
+	--color-bg: #fff;/* 151616 */
 	--color-link: #5e6262;
 	--color-link-hover: #e0e0e0;
 	--color-date: #e0e0e0;
 	color: var(--color-text);
 	background-color: var(--color-bg);
-	font-family: Futura, "futura-pt", Arial, sans-serif;
+	font-family: "Aino", Arial, sans-serif;
+	font-weight: normal;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
@@ -182,9 +190,9 @@ canvas {
 	/* height: 100%; */
 }
 #show_1, #show_2, #show_3, #show_4 {opacity: 0;pointer-events: none;}
-.content__item--details {
+/* .content__item--details {
 	font-family: titling-gothic-fb-wide, sans-serif;
-}
+} */
 
 .content__location {
 	margin: 0;
@@ -193,12 +201,15 @@ canvas {
 }
 
 .content__title {
-	font-family: Propaganda;
-	color: #0089D8;
+	font-family: "Aino-Headline";
+	color: #ffffff;
 	font-size: 8vw;
 	margin: 0;
 }
-.content__title span {opacity: 1!important;font-family: Roboto;font-weight: bold;}
+.content__title span {
+	opacity: 1 !important; 
+	color: #FF2DB4;
+}
 
 .js .content__item .content__title {
 	opacity: 0;
@@ -237,6 +248,10 @@ canvas {
 	margin: 2rem 0 0 0;
 	display: block;
 }
+.content__inner > a {
+	font-family: "Aino";
+	font-weight: normal;
+}
 
 .content__inner-item {
 	display: inline;
@@ -246,10 +261,13 @@ canvas {
 
 .content__inner-item--date {
 	display: block;
-	margin: 0 0 1.5rem;
+	/* margin: 0 0 1.5rem; */
 	font-size: 2rem;
 }
-
+/* .content__inner-item--date > span {
+	color: #FF2DB4;
+}
+ */
 .content__inner-item:nth-child(3n-1) {
 	font-family: titling-gothic-fb-narrow, sans-serif;
 	font-weight: 100;
@@ -297,51 +315,93 @@ canvas {
 .js .content__item .content__button-2 {height: 232px;top: -85px}
 .js .content__item .content__button-3 {height: 230px;top: 45px;}
 .js .content__item .content__button-4 {height: 250px;right: -123px;}
-.js .content__item .content__button-4 div {top: -35px !important;}
-.js .content__item .content__button-1 div, .js .content__item .content__button-2 div, .js .content__item .content__button-3 div, .js .content__item .content__button-4 div {
+/* .js .content__item .content__button-4 div {top: -35px !important;} */
+.js .content__item .content__button-1 div, 
+.js .content__item .content__button-2 div, 
+.js .content__item .content__button-3 div, 
+.js .content__item .content__button-4 div {
 	position: relative;
-	top: -23px;
+	/* top: -23px; */
 }
 
-.js .content__item .content__button-1 span, .js .content__item .content__button-2 span, .js .content__item .content__button-3 span, .js .content__item .content__button-4 span {
-	font-family: Roboto;
-	font-weight: bold;
-    margin-left: 5px;
+.js .content__item .content__button-1 span, 
+.js .content__item .content__button-2 span, 
+.js .content__item .content__button-3 span, 
+.js .content__item .content__button-4 span {
+	color: #FF2DB4;
 }
 
-.js .content__item .content__button-1 img, .js .content__item .content__button-2 img, .js .content__item .content__button-3 img, .js .content__item .content__button-4 img {position: absolute}
-.js .content__item .content__button-1, .js .content__item .content__button-2, .js .content__item .content__button-3, .js .content__item .content__button-4 { 
+.js .content__item .content__button-1 img, 
+.js .content__item .content__button-2 img, 
+.js .content__item .content__button-3 img, 
+.js .content__item .content__button-4 img {
+	position: absolute;
+}
+.js .content__item .content__button-1, 
+.js .content__item .content__button-2, 
+.js .content__item .content__button-3, 
+.js .content__item .content__button-4 { 
 	opacity: 1;
 	pointer-events: unset;
 	display: inline-flex;
-    width: 49%;
-    justify-content: center;
-    align-items: center;
+	width: 49%;
+	justify-content: center;
+	align-items: center;
 	font-size: 4.5em;
 	line-height: 4.1875rem;
-	color: #0089D8;
-	font-family: 'Propaganda';
-    font-style: normal;
-    font-weight: normal;
+	color: #ffffff;
+	font-family: "Aino-Headline";
+	font-style: normal;
+	font-weight: normal;
+}
+.js .content__item .content__button-1:hover, 
+.js .content__item .content__button-2:hover, 
+.js .content__item .content__button-3:hover, 
+.js .content__item .content__button-4:hover { 
+	color: #FF2DB4;
+}
+.js .content__item .content__button-1:hover span, 
+.js .content__item .content__button-2:hover span, 
+.js .content__item .content__button-3:hover span, 
+.js .content__item .content__button-4:hover span {
+	color: #ffffff;
 }
 
 .content__button:focus {
 	outline: none;
 }
-.content .content__item--columns a {color: #fff;}
+.content .content__item--columns a {
+	color: #fff;
+}
+.content .content__item--columns a:hover {
+	color: #FF2DB4;
+}
 .content .content__item--columns > div {text-align: center;max-width: 1110px;margin: 0 auto;}
-.content .content__item--columns div a > span {font-family: Propaganda;color: #0089D8;font-size: 72px;margin-bottom: 42px}
-.content .content__item--columns div a > span > span {font-family: Roboto;font-weight: bold;} 
+.content .content__item--columns div a > span {
+	font-family: "Aino-Headline";
+	color: #ffffff;
+	font-size: 72px;
+	margin-bottom: 42px;
+}
+.content .content__item--columns div a:hover > span {
+	color: #FF2DB4;
+}
+.content .content__item--columns div a > span > span {
+	color: #FF2DB4;
+} 
+.content .content__item--columns div a:hover > span > span {
+	color: #ffffff;
+} 
 
 .content .content__item--columns {
-    display: block; 
-    padding: 0 4rem;
-	font-family: Roboto;
-    font-weight: 500;
-    font-size: 3em;
-    line-height: 4rem;
-    text-align: center;
-    color: #FFFFFF;
+	display: block; 
+	padding: 0 4rem;
+	font-family: "Aino-Headline";
+	font-weight: 500;
+	font-size: 3em;
+	line-height: 4rem;
+	text-align: center;
+	color: #FF2DB4;
 }
 
 @media screen and (max-width: 1100px) {

@@ -14,9 +14,9 @@ $(document).ready(function() {
     let animation = new explosion.default(
         'container', // id of DOM el
         {
-            surface: '6e6e6e', 
-            inside: '444444', 
-            background: '151616',
+            surface: '000a56', 
+            inside: '000343', 
+            background: '000000',
             onLoad: ()=>{
                 document.body.classList.remove('loading');
             }
@@ -52,25 +52,25 @@ $(document).ready(function() {
     enterCtrl1.bind('touchstart mousedown', function(){
         isOpen = true;
         $mithNum = '1';
-        $mithNumStr = 'I';
+        $mithNumStr = '#1';
         runAnimation($mithNum, $mithNumStr)
     });
     enterCtrl2.bind('touchstart mousedown', function(){
         isOpen = true;
         $mithNum = '2';
-        $mithNumStr = 'II';
+        $mithNumStr = '#2';
         runAnimation($mithNum, $mithNumStr)
     });
     enterCtrl3.bind('touchstart mousedown', function(){
         isOpen = true;
         $mithNum = '3';
-        $mithNumStr = 'III';
+        $mithNumStr = '#3';
         runAnimation($mithNum, $mithNumStr)
     });
     enterCtrl4.bind('touchstart mousedown', function(){
         isOpen = true;
         $mithNum = '4';
-        $mithNumStr = 'IV';
+        $mithNumStr = '#4';
         runAnimation($mithNum, $mithNumStr)
     });
 
@@ -141,8 +141,8 @@ $(document).ready(function() {
     
     function runAnimation ($mithNum, $mithNumStr) {
         contentTitle.innerText = '';
-        contentTitle.insertAdjacentHTML("beforeEnd", 'МIФ' + '&nbsp;' + $mithNumStr)
-        contentTitle.removeAttribute('style');
+        contentTitle.insertAdjacentHTML("beforeEnd", 'МIФ' + '&nbsp;<span>' + $mithNumStr + '</span>');
+        // contentTitle.removeAttribute('style');
 
         let textShow = document.getElementById('show_' + $mithNum);
 

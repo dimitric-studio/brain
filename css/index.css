@@ -84,7 +84,7 @@
 .header {
 	background-image: 
 		url(./../img/bg_grad__dark-blue.png),
-		url(./../img/bg.png);
+		url(./../img/bg_n.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-blend-mode: multiply;
@@ -105,7 +105,7 @@
 	.header {
 		background-image: 
 		url(./../img/bg_grad__dark-blue.png),
-		url(./../img/bg.png);
+		url(./../img/bg_n.png);
 		background-position: left top;
 		background-size: cover;
 		width: 100vw;

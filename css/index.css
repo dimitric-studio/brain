@@ -83,8 +83,8 @@
 }
 .header {
 	background-image: 
-		url(../img/bg_grad__dark-blue.png),
-		url(../img/bg.png);
+		url(./../img/bg_grad__dark-blue.png),
+		url(./../img/bg.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-blend-mode: multiply;
@@ -104,13 +104,13 @@
 @media screen and (max-width:600px){
 	.header {
 		background-image: 
-		url(../img/bg_grad__dark-blue.png),
-		url(../img/bg.png);
-		background-position: right top;
+		url(./../img/bg_grad__dark-blue.png),
+		url(./../img/bg.png);
+		background-position: left top;
 		background-size: cover;
 		width: 100vw;
 		height: 100vh;
-		min-height: 100vh;
+		/* min-height: 100vh; */
 		grid-template-columns: 1fr;
 		grid-template-rows: auto auto 1fr auto;
 		grid-template-areas: 
@@ -316,27 +316,6 @@ lottie-player {
 .arrow_down > a > img {
 	width: 100px;
 } 
-@media screen and (max-width:600px){
-	.header {
-		background: url(../img/bg.png) center no-repeat;
-		background-size: cover;
-		width: auto;
-		height: 80vh;
-		min-height: 80vh;
-	}
-	/* .container {
-		top: calc(25% + 20px);
-		bottom: 20px;
-	} */
-	.title > img {
-		width: calc(100vw - 20px);
-		height: auto;
-		margin: 0 auto;
-	}
-	.arrow_down > a > img {
-		width: 50px;
-	} 
-}
 @media screen and (min-width: 53em) {
 	
 	.pater-mobile {

@@ -101,7 +101,7 @@
     "subline . "
     "scroll-down scroll-down";
 }
-@media screen and (max-width:600px){
+@media screen and (max-width: 1100px){
 	.header {
 		background-image: 
 		url(./../img/bg_grad__dark-blue.png),
@@ -110,7 +110,6 @@
 		background-size: cover;
 		width: 100vw;
 		height: 100vh;
-		/* min-height: 100vh; */
 		grid-template-columns: 1fr;
 		grid-template-rows: auto auto 1fr auto;
 		grid-template-areas: 
@@ -129,7 +128,7 @@
 		margin: 0 auto;
 	}
 	.arrow_down > a > img {
-		width: 50px;
+		width: 75px;
 	} 
 }
 .brand, 
@@ -162,6 +161,48 @@
 	place-self: center;
 	padding-top: 10px;
 	padding-bottom: 50px;
+}
+@media screen and (max-width: 600px){
+	.arrow_down > a > img {
+		width: 50px;
+	} 
+}
+@media screen and (max-width:1100px){
+	.brand, 
+	.headline, 
+	.subline, 
+	.scroll-down {
+		padding: 0 30px;
+	}
+	.brand {
+		grid-area: brand;
+		/* background-color: aqua; */
+	}
+	.brand > img {
+		width: 100px;
+		height: 100px;
+	}
+	.headline {
+		grid-area: headline;
+	/* 	background-color: bisque; */
+		padding-top: 15px;
+	}
+	.subline {
+		grid-area: subline;
+		/* background-color: coral; */
+	}
+	.scroll-down {
+		grid-area: scroll-down;
+		/* justify-self: center;
+		align-self: center; */
+		place-self: center;
+		padding-top: 10px;
+		padding-bottom: 50px;
+	}
+	.scroll-down img {
+		width: 75px;
+		height: 75px;
+	}
 }
 @media screen and (max-width:600px){
 	.brand, 
@@ -216,6 +257,16 @@
 	font-size: 30px;
 	line-height: 42px;
 	color: #fff;
+}
+@media screen and (max-width:992px){
+	.headline > h1 {
+		font-size: 48px;
+		line-height: 48px;
+	}
+	.subline > p {
+		font-size: 28px;
+		line-height: 30px;
+	}
 }
 @media screen and (max-width:600px){
 	.headline > h1 {
@@ -290,6 +341,22 @@ lottie-player {
 	height: 80vh;
 	position: relative;
 	/* z-index:-999; */
+}
+@media screen and (max-width:992px){
+	lottie-player {
+	/* 	width: 100vw; */
+		height: 60vh;
+		position: relative;
+		/* z-index:-999; */
+	}
+}
+@media screen and (max-width:600px){
+	lottie-player {
+	/* 	width: 100vw; */
+		height: 40vh;
+		position: relative;
+		/* z-index:-999; */
+	}
 }
 .container > img {
 	max-width: 100%;

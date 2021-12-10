@@ -255,6 +255,9 @@ canvas {
 	font-family: "Aino";
 	font-weight: normal;
 }
+.text-sm {
+	font-size: 65%;
+}
 
 .content__inner-item {
 	display: inline;

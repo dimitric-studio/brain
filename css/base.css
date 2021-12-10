@@ -295,6 +295,11 @@ canvas {
 	position: relative;	
 }
 
+/* hide unnecessary buttons */
+.disable {
+	visibility: hidden;
+}
+
 /* .content__button::after {
 	content: '';
 	position: absolute;

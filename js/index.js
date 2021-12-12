@@ -10,6 +10,8 @@ $(document).ready(function() {
     const enterCtrl3 = $('.content__button-3');
     const enterCtrl4 = $('.content__button-4');
     const closeBut = $('.close');
+    //const ru = $('h1 span.ua').css('display');
+    //var ua;
 
     let animation = new explosion.default(
         'container', // id of DOM el
@@ -141,7 +143,14 @@ $(document).ready(function() {
     
     function runAnimation ($mithNum, $mithNumStr) {
         contentTitle.innerText = '';
-        contentTitle.insertAdjacentHTML("beforeEnd", 'МIФ' + '&nbsp;<span>' + $mithNumStr + '</span>');
+        if ( $('h1 span.ru').css('display') == 'none') {
+            contentTitle.insertAdjacentHTML("beforeEnd", 'МIФ' + '&nbsp;<span>' + $mithNumStr + '</span>');
+            console.log('UA');
+        } else {
+            contentTitle.insertAdjacentHTML("beforeEnd", 'МИФ' + '&nbsp;<span>' + $mithNumStr + '</span>');
+            console.log('RU');
+        }
+        
         // contentTitle.removeAttribute('style');
 
         let textShow = document.getElementById('show_' + $mithNum);

@@ -149,7 +149,7 @@
 	grid-area: brand;
 	/* background-color: aqua; */
 }
-.brand > img {
+.brand > a > img {
 	width: 175px;
  	height: 175px;
 }
@@ -230,7 +230,7 @@ button#switch-lang {
 		grid-area: brand;
 		/* background-color: aqua; */
 	}
-	.brand > img {
+	.brand > a > img {
 		width: 100px;
 		height: 100px;
 	}
@@ -267,7 +267,7 @@ button#switch-lang {
 		grid-area: brand;
 		/* background-color: aqua; */
 	}
-	.brand > img {
+	.brand > a > img {
 		width: 100px;
 		height: 100px;
 	}

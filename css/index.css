@@ -216,6 +216,10 @@ button#switch-lang {
 	padding-bottom: 50px;
 }
 @media screen and (max-width: 600px){
+	.header {
+		min-height: 800px; /* 800, 480 */
+		overflow-y: visible;
+	}
 	.arrow_down > a > img {
 		width: 50px;
 	} 

@@ -27,7 +27,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 body {
-	--color-text: #e0e0e0;
+	--color-text: #fff;
 	--color-text-secondary: #5e6262;
 	--color-bg: #fff;/* 151616 */
 	--color-link: #5e6262;

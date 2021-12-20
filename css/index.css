@@ -315,6 +315,11 @@ button#switch-lang {
 	line-height: 32px;
 	color: #fff;
 }
+.partner-label {
+	margin-top: 10px;
+	font-size: 1em;
+	color: #fff;
+}
 @media screen and (min-width:1651px){
 	.subline {
 		margin-top: 20px;
